@@ -1,12 +1,22 @@
 {
-  "name": "O_To_express-bdd",
+  "name": "o_to_express-bdd",
   "version": "1.0.0",
-  "description": "Mettre en place un serveur HTTP avec express,créer 2 routes dynamiques :  la liste des agences et le détail d'une agence",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "dev": "node-dev index --notify=false --clear"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "node-dev": "^8.0.0"
+  }
 }
